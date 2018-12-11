@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+  background-color: white;
+  isolation: isolate;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+  width: 100%;
+  height: 100%;
+}
+
+/* Paper.js canvas */
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* mix-blend-mode: multiply; */
+  /* Mask it with opacity to keep touch events */
+  /* opacity: 0; */
+  /* display: none; */
+}
