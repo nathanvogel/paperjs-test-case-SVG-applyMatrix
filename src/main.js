@@ -19,7 +19,9 @@ for (var i = 0; i < filenames.length * 2; i++) {
         if (!svg.children[i] || !svg.children[i].children) continue;
         for (var j = 0; j < svg.children[i].children.length; j++) {
           console.log(
+            "->",
             svg.children[i].children[j].name,
+            svg.children[i].children[j].className,
             svg.children[i].children[j].applyMatrix
           );
         }

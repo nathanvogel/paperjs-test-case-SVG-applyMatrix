@@ -1,26 +1,36 @@
-============= assets/new-version.svg ==============
-============== with applyMatrix =  true
-null false
-Layer_1 true
-plante false
-baby false
-anchor false
-============== assets/old-version.svg ==============
-============== with applyMatrix =  true
-null false
-Layer_1 true
-plante true
-baby true
-anchor false
 ============== assets/new-version.svg ==============
 null false
 Layer_1 false
-plante false
-baby false
-anchor false
+-> plante Path false
+-> baby Path false
+-> anchor Shape false
 ============== assets/old-version.svg ==============
 null false
 Layer_1 false
-plante false
-baby false
-anchor false
+-> plante Path false
+-> baby Path false
+-> anchor Shape false
+
+============== assets/new-version.svg ==============
+============== with applyMatrix = true
+null false
+Layer_1 true
+-> plante Path false
+-> baby Path false
+-> anchor Shape false
+============== assets/old-version.svg ==============
+============== with applyMatrix = true
+null false
+Layer_1 true
+-> plante Path true
+-> baby Path true
+-> anchor Shape false
+
+
+// Visually summarized:
+
+SVG import with options.applyMatrix = true
+Illustrator       v22    | v23
+Layer_1 (Group)   true     true
+-> Path           true     false
+-> Shape          false    false
